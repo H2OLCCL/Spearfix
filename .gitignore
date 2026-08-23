@@ -10,8 +10,8 @@ gradle-dist/
 # ---- Decompiled vanilla reference sources (regenerate with `gradle genSources`) ----
 ref-*/
 
-# ---- Local headless server smoke-test environment ----
-server-test/
+# ---- Local headless server smoke-test environments ----
+server-test*/
 
 # ---- Local multi-version build outputs ----
 dist/
