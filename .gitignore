@@ -8,10 +8,13 @@ bin/
 gradle-dist/
 
 # ---- Decompiled vanilla reference sources (regenerate with `gradle genSources`) ----
-ref-26.1.2-src/
+ref-*/
 
 # ---- Local headless server smoke-test environment ----
 server-test/
+
+# ---- Local multi-version build outputs ----
+dist/
 
 # ---- Bundled / built jars (built via `gradle build`) ----
 *.jar
