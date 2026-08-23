@@ -1,5 +1,5 @@
 plugins {
-	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -11,9 +11,11 @@ base {
 }
 
 dependencies {
-	// Loom resolves this to the official Mojang jars (Mojang mappings are the default in Loom 1.17+).
+	// 1.21.x branch: obfuscated runtime, remapped via the fabric-loom-remap plugin.
+	// Source is written against Mojang's official mappings, same as the 26.x branches.
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 }
 
 processResources {
