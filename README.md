@@ -9,7 +9,12 @@ Server-side spear fixes for Minecraft 26.1.2 (Fabric).
 
 </div>
 
-Spearfix is an independent, **server-side only** implementation fixing two vanilla spear bugs. It requires no client mod and no Fabric API, and declares `"environment": "server"` — if placed in a client `mods/` folder it simply won't load.
+Spearfix is an independent implementation fixing two vanilla spear bugs. All logic runs server-side, but the jar works in either location:
+
+- **Dedicated server**: drop it into the server's `mods/` — clients do not need it.
+- **Single-player / LAN**: drop it into your client's `mods/` — it applies through the integrated server.
+
+No Fabric API needed.
 
 ## What it fixes
 
@@ -26,7 +31,9 @@ No Fabric API needed.
 
 ## Install
 
-Drop the jar into `mods/` on the server. Clients do not need the mod.
+- Multiplayer: put the jar in the **server's** `mods/`.
+- Single-player / LAN: put the jar in your **client's** `mods/` (applies through the integrated server).
+- Having it on both sides is also fine.
 
 ## Configuration
 
