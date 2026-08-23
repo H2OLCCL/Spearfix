@@ -12,7 +12,7 @@
 		"sources": ""
 	},
 	"license": "MIT",
-	"environment": "*",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
 			"dev.h2o_cl.spearfix.Spearfix"

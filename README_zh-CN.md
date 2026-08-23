@@ -9,7 +9,7 @@
 
 </div>
 
-Spearfix 是一个独立实现的、纯服务端的长矛 bug 修复 Mod。不需要客户端安装，也不需要 Fabric API。
+Spearfix 是一个独立实现的、**纯服务端**的长矛 bug 修复 Mod。不需要客户端安装，也不需要 Fabric API；环境声明为 `"server"`，就算放进客户端的 `mods/` 文件夹也不会被加载。
 
 ## 修了什么
 
