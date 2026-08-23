@@ -2,7 +2,7 @@
 
 # Spearfix
 
-Server-side spear fixes for Minecraft 26.1.2 (Fabric).
+Server/Singleplayer side spear fixes for Minecraft 1.21.11 and above (Fabric).
 
 [![English](https://img.shields.io/badge/README-English-2ea44f?style=for-the-badge)](./README.md)
 [![简体中文](https://img.shields.io/badge/README-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-d73a4a?style=for-the-badge)](./README_zh-CN.md)
