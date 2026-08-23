@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "spearfix",
+	"version": "${version}",
+	"name": "Spearfix",
+	"description": "Server-side spear fixes for Minecraft 26.1.2: rewind-compensated hit scanning for fast targets (MC-310857) and charge cooldown that only locks on real hits (MC-310858). Independent implementation.",
+	"authors": [
+		"H2O_CL"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.h2o_cl.spearfix.Spearfix"
+		]
+	},
+	"mixins": [
+		"spearfix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25"
+	}
+}

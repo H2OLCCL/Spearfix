@@ -1,0 +1,8 @@
+* text=auto
+
+# Windows batch scripts must keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Shell scripts must keep LF
+gradlew text eol=lf

@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"minVersion": "0.8.5",
+	"package": "dev.h2o_cl.spearfix.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"ProjectileUtilMixin",
+		"KineticWeaponMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

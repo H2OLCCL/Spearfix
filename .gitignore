@@ -1,0 +1,39 @@
+# ---- Gradle / build outputs ----
+.gradle/
+build/
+out/
+bin/
+
+# ---- Local Gradle distribution (downloaded, not part of the project) ----
+gradle-dist/
+
+# ---- Decompiled vanilla reference sources (regenerate with `gradle genSources`) ----
+ref-26.1.2-src/
+
+# ---- Local headless server smoke-test environment ----
+server-test/
+
+# ---- Bundled / built jars (built via `gradle build`) ----
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# ---- Logs ----
+*.log
+
+# ---- IDE ----
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+.settings/
+
+# ---- OS ----
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# ---- Env / secrets ----
+*.env
+.env
