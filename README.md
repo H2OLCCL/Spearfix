@@ -23,11 +23,20 @@ No Fabric API needed.
 
 ## Requirements
 
-- Minecraft 26.1.2
 - Fabric Loader 0.19.3+
-- Java 25
+- No Fabric API needed.
 
-No Fabric API needed.
+## Supported versions
+
+| Minecraft | Branch | Java |
+| --- | --- | --- |
+| 1.21.11 | `ver/1.21.11` | 21 |
+| 26.1 | `ver/26.1` | 25 |
+| 26.1.1 | `ver/26.1.1` | 25 |
+| 26.1.2 | `main` | 25 |
+| 26.2 | `ver/26.2` | 25 |
+
+Each branch builds a jar named `spearfix-0.1.0+<version>.jar`. The source is identical across branches — only the build configuration (Minecraft version, Java target, and for 1.21.11 the remap plugin) differs.
 
 ## Install
 
