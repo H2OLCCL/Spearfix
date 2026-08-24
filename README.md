@@ -49,12 +49,17 @@ Each branch builds a jar named `spearfix-0.1.0+<version>.jar`. The source is ide
 
 ## Configuration
 
-`config/spearfix.toml` is created on first launch:
+`config/spearfix.toml` (created on first launch):
 
 | Key | Default | Meaning |
 | --- | --- | --- |
 | `rewindTicks` | `3` | How many ticks the scan rewinds entity positions. `0` disables the feature. |
 | `refundMissedCooldown` | `true` | Cooldown only locks when a charge hit actually connects. `false` = vanilla. |
+
+With [ModMenu](https://modrinth.com/mod/modmenu) installed, both values can be changed
+in-game from the mod list (Mods → Spearfix). In single-player the changes apply immediately;
+on a dedicated server, edit the server's file instead. The config screen follows the game's
+language, which auto-selects by your region — English and Simplified Chinese ship built-in.
 
 ## Building
 
