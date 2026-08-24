@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"dev.h2o_cl.spearfix.Spearfix"
+		],
+		"modmenu": [
+			"dev.h2o_cl.spearfix.client.SpearfixModMenu"
 		]
 	},
 	"mixins": [
@@ -24,7 +27,10 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
-		"minecraft": "~1.21.11",
-		"java": ">=21"
+		"minecraft": "~26.1.2",
+		"java": ">=25"
+	},
+	"suggests": {
+		"modmenu": "*"
 	}
 }
