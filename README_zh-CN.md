@@ -59,10 +59,6 @@ Spearfix 是一个独立实现的长矛 bug 修复 Mod。所有逻辑都在服�
 
 装 JDK 25，跑 `gradlew build`，产物在 `build/libs/`。
 
-## 致谢
-
-感谢 SpearAim 社区让大家注意到这些原版 bug。Spearfix 与任何其他 Mod 均无共享代码——回退补偿扫描、冷却退还机制都是本项目的独立实现。
-
 ## 许可证
 
 [MIT](LICENSE)
