@@ -10,10 +10,22 @@ base {
 	archivesName = 'spearfix'
 }
 
+repositories {
+	maven {
+		name = 'TerraformersMC'
+		url = 'https://maven.terraformersmc.com/releases/'
+	}
+}
+
 dependencies {
 	// Loom resolves this to the official Mojang jars (Mojang mappings are the default in Loom 1.17+).
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Optional ModMenu integration (client-side config screen). Compile-only:
+	// the API is used at compile time, the jar is never bundled, and keeping
+	// modmenu's runtime deps off the compile classpath avoids version skew.
+	compileOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 }
 
 processResources {
