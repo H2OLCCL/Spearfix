@@ -72,12 +72,46 @@ public final class SpearfixConfig {
       return refundMissedCooldown;
    }
 
-   private static void writeDefaults() {
+   /**
+    * Live-edit hooks used by the ModMenu config screen. In single-player the
+    * integrated server shares this JVM, so changes apply immediately; on a
+    * dedicated server the client-side copy only affects local prediction.
+    */
+   public static void setRewindTicks(int value) {
+      rewindTicks = Math.max(0, Math.min(4, value));
+      save();
+   }
+
+   public static void setRefundMissedCooldown(boolean value) {
+      refundMissedCooldown = value;
+      save();
+   }
+
+   private static void save() {
       try {
          Files.createDirectories(FILE.getParent());
-         Files.writeString(FILE, DEFAULTS, StandardCharsets.UTF_8);
+         Files.writeString(FILE, toToml(), StandardCharsets.UTF_8);
       } catch (IOException ignored) {
       }
+   }
+
+   private static String toToml() {
+      StringBuilder sb = new StringBuilder(DEFAULTS.length());
+      sb.append("# Spearfix configuration (server side)\n\n");
+      sb.append("# Rewind the hit scan by this many ticks, so a fast-moving target is hit\n");
+      sb.append("# where the attacker actually sees it rendered (interpolation lag on\n");
+      sb.append("# remote entities is up to 3 ticks).\n");
+      sb.append("# 0 disables the feature and restores vanilla behaviour.\n");
+      sb.append("rewindTicks = ").append(rewindTicks).append("\n\n");
+      sb.append("# In vanilla a spear charge tick that lands no effect at all still locks\n");
+      sb.append("# the target into the contact cooldown, wasting the tick. With this on,\n");
+      sb.append("# the cooldown only locks once an attack actually connects.\n");
+      sb.append("refundMissedCooldown = ").append(refundMissedCooldown).append('\n');
+      return sb.toString();
+   }
+
+   private static void writeDefaults() {
+      save();
    }
 
    private static int clamp(String raw, int min, int max, int fallback) {

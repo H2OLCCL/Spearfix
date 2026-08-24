@@ -1,0 +1,8 @@
+{
+  "spearfix.config.title": "Spearfix 设置",
+  "spearfix.config.rewindTicks": "回退 tick 数：%s",
+  "spearfix.config.refundMissedCooldown": "戳空退还冷却：%s",
+  "spearfix.config.on": "开",
+  "spearfix.config.off": "关",
+  "spearfix.config.note": "数值在模组逻辑运行处生效。独立服务器请在服务端的 config/spearfix.toml 里修改。"
+}
