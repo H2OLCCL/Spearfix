@@ -1,0 +1,8 @@
+{
+  "spearfix.config.title": "Spearfix Settings",
+  "spearfix.config.rewindTicks": "Rewind ticks: %s",
+  "spearfix.config.refundMissedCooldown": "Refund missed cooldown: %s",
+  "spearfix.config.on": "ON",
+  "spearfix.config.off": "OFF",
+  "spearfix.config.note": "Values apply where the mod logic runs. On a dedicated server, edit the server's config/spearfix.toml."
+}
