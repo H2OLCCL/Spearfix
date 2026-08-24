@@ -59,10 +59,6 @@ Each branch builds a jar named `spearfix-0.1.0+<version>.jar`. The source is ide
 
 JDK 25, then `gradlew build`. Output is in `build/libs/`.
 
-## Acknowledgements
-
-Thanks to the SpearAim community for drawing attention to these vanilla bugs. Spearfix shares no code with any other mod — the mechanisms here (rewind-compensated scan, cooldown refund) are its own implementation.
-
 ## License
 
 [MIT](LICENSE)
