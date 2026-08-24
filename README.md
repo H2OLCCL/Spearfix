@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/H2OLCCL/Spearfix/main/logo.png" alt="Spearfix logo" width="128" />
+
 # Spearfix
 
 Server/Singleplayer side spear fixes for Minecraft 1.21.11 and above (Fabric).
